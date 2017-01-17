@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tuesday at the Office</title>
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+      max-width: 500px;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.js"></script>
+  <script>
+    $(function() {
+      $('button.js-show-notes').on('click', function(e) {
+        $(this).parents('article').find('ul').show();
+      });
+    });
+
+  </script>
+  
+</head>
+<body>
+
+  <header>
+    <h1>Tuesday at the Office</h1>
+  </header>
+  
+  <article>
+    <h2>#2: Name</h2>
+    <p>Date</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <button class="js-show-notes">Show notes</button>
+
+    <ul style="display: none;">
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+    </ul>
+  </article>
+  
+
+  <article>
+    <h2>#1: Dries De Roeck</h2>
+    <p>17 januari 2017</p>
+
+    <p>In deze eerste podcast ontvangen we Dries De Roeck, zelfverklaard next generation alchemist en design researcher. Xavier praat met Dries over design in het algemeen, zijn design onderzoek rond the internet of things, en de uitholling van de term user experience.</p>
+
+    <button class="js-show-notes">Show notes</button>
+
+    <ul style="display: none;">
+      <li><a href="http://www.roeckoe.be/">Dries De Roeck - Website</a></li>
+      <li><a href="http://transground.blogspot.be/">Erik Stolterman</a></li>
+      <li><a href="https://twitter.com/DriesDeRoeck">Dries De Roeck op Twitter</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Cradle_to_Cradle:_Remaking_the_Way_We_Make_Things">Cradle to Cradle</a></li>
+      <li><a href="http://www.meetup.com/Antwerpen-UI-Design-Meetup/">UI design meetup Antwerpen - Meetup.com</a></li>
+      <li><a href="https://www.meetup.com/nl-NL/UX-Antwerp/">UX Antwerp - Meetup.com</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p>Onze podcasts zijn gratis te beluisteren. Wij waarderen een linkje naar onze site. Feedback? Vragen? Laat ons iets weten op Twitter: ping <a href="https://twitter.com/Xavez">@xavez</a> of <a href="https://twitter.com/johan_ronsse">@johan_ronsse</a>.</p>
+  </footer>
+
+</body>
+</html>
