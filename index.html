@@ -2,28 +2,31 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tuesday at the Office</title>
   <style type="text/css">
     body {
       font-family: sans-serif;
       max-width: 500px;
+      line-height:  1.3;
     }
   </style>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.js"></script>
   <script>
     $(function() {
       $('button.js-show-notes').on('click', function(e) {
-        $(this).parents('article').find('ul').show();
+        $(this).parents('article').find('ul').toggle();
       });
     });
 
   </script>
-  
+
 </head>
 <body>
 
   <header>
-    <h1>Tuesday at the Office</h1>
+    <h1>Tuesday at the&nbsp;Office</h1>
+    <p><a href="https://itunes.apple.com/be/podcast/tuesday-at-the-office/id1198262018">Abonneer op iTunes</a></p>
   </header>
 
 <!--  <article>
@@ -43,12 +46,14 @@
   </article> -->
 
   <article>
-    <h2>#1: Dries De Roeck</h2>
-    <p>17 januari 2017</p>
+    <header>
+      <h2>#1: Dries De Roeck</h2>
+      <p><small>Dinsdag 24 januari 2017</small></p>
+    </header>
 
     <p>In deze eerste podcast ontvangen we Dries De Roeck, zelfverklaard next generation alchemist en design researcher. Xavier praat met Dries over design in het algemeen, zijn design onderzoek rond the internet of things, en de uitholling van de term user experience.</p>
 
-    <button class="js-show-notes">Show notes</button>
+    <button class="js-show-notes">Toon show notes</button>
 
     <ul style="display: none;">
       <li><a href="http://www.roeckoe.be/">Dries De Roeck - Website</a></li>
@@ -61,7 +66,7 @@
   </article>
 
   <footer>
-    <p>Onze podcasts zijn gratis te beluisteren. Wij waarderen een linkje naar onze site. Feedback? Vragen? Laat ons iets weten op Twitter: ping <a href="https://twitter.com/Xavez">@xavez</a> of <a href="https://twitter.com/johan_ronsse">@johan_ronsse</a>.</p>
+    <p><small>Onze podcasts zijn gratis te beluisteren. Wij waarderen een linkje naar onze site. Feedback? Vragen? Laat ons iets weten op Twitter: ping <a href="https://twitter.com/Xavez">@xavez</a> of <a href="https://twitter.com/johan_ronsse">@johan_ronsse</a>.</small></p>
   </footer>
 
 </body>
