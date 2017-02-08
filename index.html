@@ -4,9 +4,60 @@
   <meta charset="utf-8">
   <title>Tuesday at the Office</title>
   <style type="text/css">
+    html {
+      font-size: 62.5%;
+    }
     body {
-      font-family: sans-serif;
+      font-family: Arial, sans-serif;
       max-width: 500px;
+      margin: 0 auto;
+      font-size: 1.6rem;
+      line-height: 1.5;
+      color: #333;
+    }
+    h1, h2, h3, h4 {
+      color: #000;
+    }
+    a {
+      color: blue;
+    }
+    a:visited {
+      color: purple;
+    }
+    input, button {
+      font-family: Arial, sans-serif;
+      font-size: 1.4rem;
+    }
+    button,
+    .c-button {
+      background: #000;
+      color: #FFF;
+      padding: 1rem;
+      border: none;
+      border-radius: 3px;
+      font-size: 1.4rem;
+    }
+    a.c-button {
+      text-decoration: none;
+      color: #FFF;
+    }
+    .c-article__header h2,
+    .c-article__header p {
+      margin: 0;
+      padding: 0;
+    }
+    .c-main-header {
+      margin: 3rem 0 5rem;
+    }
+    .c-main-header h1 {
+      margin: 0;
+    }
+    .c-main-footer {
+      color: #666;
+      margin-top: 5rem;
+    }
+    .c-main-footer a {
+      color: #333;
     }
   </style>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.js"></script>
@@ -22,29 +73,16 @@
 </head>
 <body>
 
-  <header>
+  <header class="c-main-header">
     <h1>Tuesday at the Office</h1>
+    <p><a class="c-button" href="https://itunes.apple.com/be/podcast/tuesday-at-the-office/id1198262018">Abonneer op iTunes</a></p>
   </header>
 
-<!--  <article>
-    <h2>#2: Name</h2>
-    <p>Date</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-    <button class="js-show-notes">Show notes</button>
-
-    <ul style="display: none;">
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-    </ul>
-  </article> -->
-
-  <article>
-    <h2>#1: Dries De Roeck</h2>
-    <p>17 januari 2017</p>
+  <article class="c-article">
+    <header class="c-article__header">
+      <h2>#1: Dries De Roeck</h2>
+      <p>17 januari 2017</p>
+    </header>
 
     <p>In deze eerste podcast ontvangen we Dries De Roeck, zelfverklaard next generation alchemist en design researcher. Xavier praat met Dries over design in het algemeen, zijn design onderzoek rond the internet of things, en de uitholling van de term user experience.</p>
 
@@ -60,7 +98,7 @@
     </ul>
   </article>
 
-  <footer>
+  <footer class="c-main-footer">
     <p>Onze podcasts zijn gratis te beluisteren. Wij waarderen een linkje naar onze site. Feedback? Vragen? Laat ons iets weten op Twitter: ping <a href="https://twitter.com/Xavez">@xavez</a> of <a href="https://twitter.com/johan_ronsse">@johan_ronsse</a>.</p>
   </footer>
 
