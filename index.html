@@ -9,18 +9,29 @@
 
     html {
       font-size: 62.5%;
+      height: 100%;
+    }
+
+    .c-container {
+      background: #FFF;
+      width: 90%;
+      padding: 1rem;
+    }
+    
+    .c-container__inner {
+      max-width: 500px;
+      margin: 0 auto;
     }
 
     body {
-      font-family: "Benton Sans Reg", Arial, sans-serif;
-      max-width: 500px;
+      background: #EEE url(wave.svg);
+      font-family: "Benton Sans", Arial, sans-serif;
       margin: 0 auto;
       font-size: 1.6rem;
       line-height: 1.5;
       color: #333;
-      padding: 1rem;
     }
-    
+
     @media (min-width: 800px) {
       body {
         padding-right: 100px;
@@ -29,10 +40,9 @@
 
     h1, h2, h3, h4 {
       color: #000;
-      /* Code from Type network. Why is this so bad? */
-      font-family: "Benton Sans Bd";
-      font-style: Normal;
-      font-weight: Normal;
+      font-family: "Benton Sans", Arial, sans-serif;
+      font-style: normal;
+      font-weight: 700;
     }
 
     a {
@@ -53,7 +63,7 @@
     }
 
     input, button {
-      font-family: "Benton Sans Reg", Arial, sans-serif;
+      font-family: "Benton Sans", Arial, sans-serif;
       font-size: 1.4rem;
     }
 
@@ -129,22 +139,6 @@
       color: #333;
     }
 
-    @media (min-width: 900px) {
-      .c-deco {
-        background: #F2F2F2;
-        width: 200px;
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 100%;
-      }
-      
-      .c-deco__inner {
-        background: url(wave.svg);
-        height: 100%;
-      }
-    }
-
   </style>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.js"></script>
   <script>
@@ -157,47 +151,49 @@
 </head>
 <body>
 
-  <div class="c-deco">
-    <div class="c-deco__inner"></div>
+  <div class="c-container">
+    <div class="c-container__inner">
+
+      <header class="c-main-header" role="banner">
+        <h1>Tuesday at the Office</h1>
+        <img src="logo.svg">
+        <p><a class="c-button" href="https://itunes.apple.com/be/podcast/tuesday-at-the-office/id1198262018">Abonneer op iTunes</a></p>
+      </header>
+
+      <main role="main">
+
+        <article class="c-article">
+          <header class="c-article__header">
+            <h2>#1: Dries De Roeck</h2>
+            <p>17 januari 2017</p>
+          </header>
+          <div class="c-article__content">
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/304136704&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+            <p>In deze eerste podcast ontvangen we Dries De Roeck, zelfverklaard next generation alchemist en design researcher. Xavier praat met Dries over design in het algemeen, zijn design onderzoek rond the internet of things, en de uitholling van de term user experience.</p>
+
+            <button class="js-show-notes">Show notes</button>
+            <div class="c-show-notes" style="display: none;">
+              <ul>
+                <li><a href="http://www.roeckoe.be/">Dries De Roeck - Website</a></li>
+                <li><a href="http://transground.blogspot.be/">Erik Stolterman</a></li>
+                <li><a href="https://twitter.com/DriesDeRoeck">Dries De Roeck op Twitter</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Cradle_to_Cradle:_Remaking_the_Way_We_Make_Things">Cradle to Cradle</a></li>
+                <li><a href="http://www.meetup.com/Antwerpen-UI-Design-Meetup/">UI design meetup Antwerpen - Meetup.com</a></li>
+                <li><a href="https://www.meetup.com/nl-NL/UX-Antwerp/">UX Antwerp - Meetup.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </main>
+
+      <footer class="c-main-footer">
+        <p>Onze podcasts zijn gratis te beluisteren. Wij waarderen een linkje naar onze site. Feedback? Vragen? Laat ons iets weten op Twitter: ping <a href="https://twitter.com/Xavez">@xavez</a> of <a href="https://twitter.com/johan_ronsse">@johan_ronsse</a>.</p>
+      </footer>
+
+    </div>
   </div>
 
-  <header class="c-main-header" role="banner">
-    <h1>Tuesday at the Office</h1>
-    <img src="logo.svg">
-    <p><a class="c-button" href="https://itunes.apple.com/be/podcast/tuesday-at-the-office/id1198262018">Abonneer op iTunes</a></p>
-  </header>
-  
-  <main role="main">
-
-    <article class="c-article">
-      <header class="c-article__header">
-        <h2>#1: Dries De Roeck</h2>
-        <p>17 januari 2017</p>
-      </header>
-      <div class="c-article__content">
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/304136704&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-
-        <p>In deze eerste podcast ontvangen we Dries De Roeck, zelfverklaard next generation alchemist en design researcher. Xavier praat met Dries over design in het algemeen, zijn design onderzoek rond the internet of things, en de uitholling van de term user experience.</p>
-
-        <button class="js-show-notes">Show notes</button>
-        <div class="c-show-notes" style="display: none;">
-          <ul>
-            <li><a href="http://www.roeckoe.be/">Dries De Roeck - Website</a></li>
-            <li><a href="http://transground.blogspot.be/">Erik Stolterman</a></li>
-            <li><a href="https://twitter.com/DriesDeRoeck">Dries De Roeck op Twitter</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Cradle_to_Cradle:_Remaking_the_Way_We_Make_Things">Cradle to Cradle</a></li>
-            <li><a href="http://www.meetup.com/Antwerpen-UI-Design-Meetup/">UI design meetup Antwerpen - Meetup.com</a></li>
-            <li><a href="https://www.meetup.com/nl-NL/UX-Antwerp/">UX Antwerp - Meetup.com</a></li>
-          </ul>
-        </div>
-      </div>
-    </article>
-  </main>
-
-  <footer class="c-main-footer">
-    <p>Onze podcasts zijn gratis te beluisteren. Wij waarderen een linkje naar onze site. Feedback? Vragen? Laat ons iets weten op Twitter: ping <a href="https://twitter.com/Xavez">@xavez</a> of <a href="https://twitter.com/johan_ronsse">@johan_ronsse</a>.</p>
-  </footer>
-
-
 </body>
-</html> 
+</html>
